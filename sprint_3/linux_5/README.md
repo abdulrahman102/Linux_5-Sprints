@@ -9,20 +9,16 @@ more : views the content of file as a page by page (window size) that you can sc
 rm : used to delete files and with -r (recursive option)  it is used to delete folders with its contents.  
 rmdir : used to delete only empty files.  
 **4. Create the following hierarchy under your home directory:**  
-       	dir1	     docs  
-		   /    \			  |  
-    dir11  dir12	 mycv  
-	    |  
-    file1  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_3/linux_5/imgs%20and%20gifs/HIRERACHY_question.png)  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_3/linux_5/imgs%20and%20gifs/Directories_hirerachy.png)  
->**a. Remove dir11 in one-step. What did you notice?  And how did you overcome that?**  
->>- dir11 can’t be deleted using mkdir cause it’s not empty directory, so there is two solution to overcome this issue, first one is by deleting the directory content first then delete the directory itself, the second one - and the more convenient one- is to use rm -r which delete the directory recursively.  
- >>![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_3/linux_5/imgs%20and%20gifs/remove_dir11.png)  
->**b. Then remove dir12 using rmdir –p command. State what happened to the hierarchy (Note: you are in your home directory).**  
->>- rmdir -p is used to remove the directory and parent directories for it, so the dir1 directory has been also removed.  
->>![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_3/linux_5/imgs%20and%20gifs/remove_dir12.png)  
->**c. The output of the command pwd was /home/user. Write the absolute and relative path for the file mycv**  
->>![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_3/linux_5/imgs%20and%20gifs/relative_absolute.png)  
+**a. Remove dir11 in one-step. What did you notice?  And how did you overcome that?**  
+- dir11 can’t be deleted using mkdir cause it’s not empty directory, so there is two solution to overcome this issue, first one is by deleting the directory content first then delete the directory itself, the second one - and the more convenient one- is to use rm -r which delete the directory recursively.  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_3/linux_5/imgs%20and%20gifs/remove_dir11.png)  
+**b. Then remove dir12 using rmdir –p command. State what happened to the hierarchy (Note: you are in your home directory).**  
+- rmdir -p is used to remove the directory and parent directories for it, so the dir1 directory has been also removed.  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_3/linux_5/imgs%20and%20gifs/remove_dir12.png)  
+**c. The output of the command pwd was /home/user. Write the absolute and relative path for the file mycv**  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_3/linux_5/imgs%20and%20gifs/relative_absolute.png)  
 **5. Copy the /etc/passwd file to your home directory making its name is mypasswd.**  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_3/linux_5/imgs%20and%20gifs/copy_etc.png)  
 **6. Rename this new file to be oldpasswd.**  
