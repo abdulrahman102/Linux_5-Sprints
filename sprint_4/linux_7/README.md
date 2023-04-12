@@ -87,7 +87,7 @@ only execution permission
 read will give permission to list content but not the meta data, to use ls with full access it needs read and execution permission  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/ls.png)  
 
-#### ** * View a file content (more/cat command)**  
+#### ** View a file content (more/cat command)**  
 read only permission  
  
 
