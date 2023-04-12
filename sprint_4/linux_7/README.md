@@ -64,7 +64,7 @@ The default mask for a root user us 022, changing the folder permissions to 755 
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/no_permission.png)  
 
 ### **15. What are the minimum permission needed for:**  
-#### ** * Copy a directory (permission for source directory and permissions for target parent directory)**  
+#### ** Copy a directory (permission for source directory and permissions for target parent directory)**  
 Source: read if empty. read and execution if not empty.  
 target: write and execution  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/copy_directory1.png)  
