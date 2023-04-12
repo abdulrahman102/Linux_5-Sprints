@@ -10,7 +10,7 @@
 ####  Full name/comment: Bad User  
 ####  Password: baduser  
 using -p with useradd reqires giving the encrypted version of password so it's not prefered to use it.
-The default shell script if user didn't give it is sh
+The default shell script if user didn't give it is sh  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/baduser_user_add.png)  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/baduser_user_add_2.png)  
 
