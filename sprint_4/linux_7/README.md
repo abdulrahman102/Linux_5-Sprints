@@ -34,47 +34,47 @@
 ### **13. Try to access (by cd command) the folder (myteam)**  
 
 ### **14. Using the command Line**  
-### ** * Change the permissions of oldpasswd file to give owner read and write permissions and for group write and execute and execute only for the others (using chmod in 2 different ways)**  
+#### ** * Change the permissions of oldpasswd file to give owner read and write permissions and for group write and execute and execute only for the others (using chmod in 2 different ways)**  
 
-### ** * Change your default permissions to be as above.**  
+#### ** * Change your default permissions to be as above.**  
 
 Excution can’t be applied as a default for files but it can be applied for folders  
 
-### **  What is the maximum permission a file can have, by default when it is just created? And what is that for directory.**  
+#### **  What is the maximum permission a file can have, by default when it is just created? And what is that for directory.**  
 
 The system default permission values are 777 (rwxrwxrwx) for folders and 666 (rw-rw-rw-) for files.  
 The default mask for a non-root user is 002, changing the folder permissions to 775 (rwxrwxr-x), and file permissions to 664 (rw-rw-r--).  
 The default mask for a root user us 022, changing the folder permissions to 755 (rwxr-xr-x), and file permissions to 644 (rw-r--r--).  
 
 
-### *** Change your default permissions to be no permission to everyone then create a directory and a file**  
+#### *** Change your default permissions to be no permission to everyone then create a directory and a file**  
 
 ### **15. What are the minimum permission needed for:**  
-### ** * Copy a directory (permission for source directory and permissions for target parent directory)**  
+#### ** * Copy a directory (permission for source directory and permissions for target parent directory)**  
 
 Source: read if empty. read and execution if not empty.  
 target: write and execution  
 
-### ** * Copy a file (permission for source file and and permission for target parentdirectory)**  
+#### ** * Copy a file (permission for source file and and permission for target parentdirectory)**  
 
 Source: read  
 target: write and execution  
 
 
-### ** * Delete a file**  
+#### ** * Delete a file**  
 file permission doesn’t affect but its parent folder permission is write and execution.  
 
-### ** * Change to a directory**  
+#### ** * Change to a directory**  
 only execution permission  
 
 
-### ** * List a directory content (ls command)**  
+#### ** * List a directory content (ls command)**  
 read will give permission to list content but not the meta data, to use ls with full access it needs read and execution permission  
 
-### ** * View a file content (more/cat command)**  
+#### ** * View a file content (more/cat command)**  
 read only permission  
 
-### ** * Modify a file content**  
+#### ** * Modify a file content**  
 write permission  
 
 
