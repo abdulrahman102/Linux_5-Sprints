@@ -39,7 +39,7 @@ The default shell script if user didn't give it is sh
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/delete_group.png)  
 
 ### **11. Create a folder called myteam in your home directory and change its permissions to read only for the owner.**  
-![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/myteam.png)  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/chmod.png)  
 
 ### **12. Log out and log in by another user**  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/new_login.png)  
@@ -49,57 +49,55 @@ The default shell script if user didn't give it is sh
 
 ### **14. Using the command Line**  
 #### ** * Change the permissions of oldpasswd file to give owner read and write permissions and for group write and execute and execute only for the others (using chmod in 2 different ways)**  
-![]()  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/chmod_2_ways.png)  
 
 #### ** * Change your default permissions to be as above.**  
 Excution can’t be applied as a default for files but it can be applied for folders  
-![]()  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/umask.png)  
 
 #### **  What is the maximum permission a file can have, by default when it is just created? And what is that for directory.**  
 The system default permission values are 777 (rwxrwxrwx) for folders and 666 (rw-rw-rw-) for files.  
 The default mask for a non-root user is 002, changing the folder permissions to 775 (rwxrwxr-x), and file permissions to 664 (rw-rw-r--).  
 The default mask for a root user us 022, changing the folder permissions to 755 (rwxr-xr-x), and file permissions to 644 (rw-r--r--).  
-![]()  
 
 #### *** Change your default permissions to be no permission to everyone then create a directory and a file**  
-![]()  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/no_permission.png)  
 
 ### **15. What are the minimum permission needed for:**  
 #### ** * Copy a directory (permission for source directory and permissions for target parent directory)**  
 Source: read if empty. read and execution if not empty.  
 target: write and execution  
-![]()  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/copy_directory1.png)  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/copy_directory2.png)  
 
 #### ** * Copy a file (permission for source file and and permission for target parentdirectory)**  
 Source: read  
 target: write and execution  
-![]()  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/copy_file.png)  
 
 #### ** * Delete a file**  
 file permission doesn’t affect but its parent folder permission is write and execution.  
-![]()  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/remove_file.png)  
 
 #### ** * Change to a directory**  
 only execution permission  
-![]()  
 
 
 #### ** * List a directory content (ls command)**  
 read will give permission to list content but not the meta data, to use ls with full access it needs read and execution permission  
-![]()  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/ls.png)  
 
 #### ** * View a file content (more/cat command)**  
 read only permission  
-![]()  
+ 
 
 #### ** * Modify a file content**  
 write permission  
-![]()  
-
 
 ### **16. Create a file with permission 444. Try to edit in it and to remove it? Note what happened.**  
 Adding content to read-only file is not permitted, but removing it is permitted but will ask the user first.  
-![]()  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/add_text_readonly.png)  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/remove_file_readonly.png)  
 	
 ### **17. What is the difference between the “x” permission for a file and for a directory?**  
 X for file : means that the user is permitted to execute the script inside the file or its content  
