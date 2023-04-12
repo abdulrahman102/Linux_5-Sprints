@@ -48,10 +48,10 @@ The default shell script if user didn't give it is sh
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/myteam.png)  
 
 ### **14. Using the command Line**  
-#### ** * Change the permissions of oldpasswd file to give owner read and write permissions and for group write and execute and execute only for the others (using chmod in 2 different ways)**  
+#### ** Change the permissions of oldpasswd file to give owner read and write permissions and for group write and execute and execute only for the others (using chmod in 2 different ways)**  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/chmod_2_ways.png)  
 
-#### ** * Change your default permissions to be as above.**  
+#### ** Change your default permissions to be as above.**  
 Excution can’t be applied as a default for files but it can be applied for folders  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/umask.png)  
 
@@ -60,7 +60,7 @@ The system default permission values are 777 (rwxrwxrwx) for folders and 666 (rw
 The default mask for a non-root user is 002, changing the folder permissions to 775 (rwxrwxr-x), and file permissions to 664 (rw-rw-r--).  
 The default mask for a root user us 022, changing the folder permissions to 755 (rwxr-xr-x), and file permissions to 644 (rw-r--r--).  
 
-#### *** Change your default permissions to be no permission to everyone then create a directory and a file**  
+#### ** Change your default permissions to be no permission to everyone then create a directory and a file**  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/no_permission.png)  
 
 ### **15. What are the minimum permission needed for:**  
@@ -70,20 +70,20 @@ target: write and execution
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/copy_directory1.png)  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/copy_directory2.png)  
 
-#### ** * Copy a file (permission for source file and and permission for target parentdirectory)**  
+#### **  Copy a file (permission for source file and and permission for target parentdirectory)**  
 Source: read  
 target: write and execution  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/copy_file.png)  
 
-#### ** * Delete a file**  
+#### ** Delete a file**  
 file permission doesn’t affect but its parent folder permission is write and execution.  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/remove_file.png)  
 
-#### ** * Change to a directory**  
+#### ** Change to a directory**  
 only execution permission  
 
 
-#### ** * List a directory content (ls command)**  
+#### ** List a directory content (ls command)**  
 read will give permission to list content but not the meta data, to use ls with full access it needs read and execution permission  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/ls.png)  
 
@@ -91,7 +91,7 @@ read will give permission to list content but not the meta data, to use ls with 
 read only permission  
  
 
-#### ** * Modify a file content**  
+#### ** Modify a file content**  
 write permission  
 
 ### **16. Create a file with permission 444. Try to edit in it and to remove it? Note what happened.**  
