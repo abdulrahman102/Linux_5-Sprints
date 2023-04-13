@@ -5,7 +5,8 @@
 ####  Password: ahmed  
 <br>
 - useradd or adduser both can be used to add a new user. adduser is a high level command used in new versions like ubuntu as it's more interactive and taked account information, on the other hand useradd takes account information by options and requires all account inputs as it doesn't have defaults.  
-</br>
+</br>  
+  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/ahmed_user_add.png)  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/ahmed_user_add2.png)  
 ### **2. Create a user accou nt with the following attribute**  
