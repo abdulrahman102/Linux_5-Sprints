@@ -11,7 +11,7 @@
 ####  Username: baduser  
 ####  Full name/comment: Bad User  
 ####  Password: baduser  
-- using -p with useradd reqires giving the encrypted version of password so it's not prefered to use it.
+- using -p with useradd requires giving the encrypted version of password so it's not prefered to use it.
 The default shell script if user didn't give it is sh  
   
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/baduser_user_add.png)  
@@ -38,12 +38,12 @@ The default shell script if user didn't give it is sh
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/baduser_locked.png)  
 
 ### **9. Delete bad user account**  
-- same as userand group , differnce between userdel and deluser is in the interactivity level as deluser deletses the account entirly with all it dependencies like the home directory, and that's not the case with userdel  
+- as mentioned before , differnce between userdel and deluser is in the interactivity level as deluser deletes the account entirly with all it dependencies like the home directory, and that's not the case with userdel which should have options value to do so
   
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/delete_baduser.png)  
 
 ### **10. Delete the supplementary group called badgroup.** 
-- same as user, differnce between groupdel and delgroup is in the interactivity level  
+- same as pervious , differnce between groupdel and delgroup is in the interactivity level  
   
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/delete_group.png)  
 
