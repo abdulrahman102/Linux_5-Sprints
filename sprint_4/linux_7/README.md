@@ -1,14 +1,14 @@
 
 ### **1. Create a user account with the following attribute**   
-####  username: ahmed 
-####  Fullname/comment: ahmed ali  
-####  Password: ahmed  
+#### * username: ahmed 
+#### * Fullname/comment: ahmed ali  
+#### * Password: ahmed  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/ahmed_user_add.png)  
 
 ### **2. Create a user accou nt with the following attribute**  
-####  Username: baduser  
-####  Full name/comment: Bad User  
-####  Password: baduser  
+#### * Username: baduser  
+#### * Full name/comment: Bad User  
+#### * Password: baduser  
 using -p with useradd reqires giving the encrypted version of password so it's not prefered to use it.
 The default shell script if user didn't give it is sh  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/baduser_user_add.png)  
@@ -48,7 +48,7 @@ The default shell script if user didn't give it is sh
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/myteam.png)  
 
 ### **14. Using the command Line**  
-#### ** Change the permissions of oldpasswd file to give owner read and write permissions and for group write and execute and execute only for the others (using chmod in 2 different ways)**  
+#### *** Change the permissions of oldpasswd file to give owner read and write permissions and for group write and execute and execute only for the others (using chmod in 2 different ways)**  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_7/imgs/chmod_2_ways.png)  
 
 #### ** Change your default permissions to be as above.**  
