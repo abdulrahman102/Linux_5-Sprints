@@ -84,7 +84,7 @@
 
 ------------
 
-#### **6. Write two commands: first: to search for all files on the system that named  **  
+#### **6. Write two commands: first: to search for all files on the system that named.**  
 - .bash_profile. Second: sorts the output of ls command on / recursively, Saving their output and error   in 2 different files and sending them to the background.  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_8/imgs/18_2commands.png)  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_8/imgs/19_2commands2.png)  
