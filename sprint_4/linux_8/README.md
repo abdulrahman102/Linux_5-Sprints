@@ -4,8 +4,7 @@
 
 ------------
 
-
-### #**2. Open mycv file using vi command then: Without using arrows state how to:**  
+####**2. Open mycv file using vi command then: Without using arrows state how to:**  
 #####**a. Move the cursor down one line at time.**  
 - Press j button in command mode  
 
@@ -23,7 +22,7 @@
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_8/imgs/6)delete_lines.gif)  
 ##### **f. How to step to the end of line and change to writing mode in one-step.**  
 -  Press A in command mode  
-![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_8/imgs/7)move_to_line_end.gif)  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_8/imgs/1)vim_mycv1.png)  
 
 ------------
 
