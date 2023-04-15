@@ -2,8 +2,7 @@
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_8/imgs/1)vim_mycv1.png)  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_8/imgs/2)vim_mycv2.png)  
 
-------------
-
+------------  
 ####**2. Open mycv file using vi command then: Without using arrows state how to:**  
 #####**a. Move the cursor down one line at time.**  
 - Press j button in command mode  
