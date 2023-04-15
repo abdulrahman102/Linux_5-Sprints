@@ -21,7 +21,7 @@
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_8/imgs/6_delete_lines.gif)  
 ##### **f. How to step to the end of line and change to writing mode in one-step.**  
 -  Press A in command mode  
-![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_8/imgs/1_vim_mycv1.png)  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_8/imgs/7_move_to_line_end.gif)  
 
 ------------
 
