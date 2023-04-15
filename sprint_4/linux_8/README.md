@@ -1,5 +1,5 @@
 #### **1. Using vi write your CV in the file mycv. Your CV should include your name, age, school, college, experience,…**  
-![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_8/imgs/1)vim_mycv1.png)  
+![]('https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_8/imgs/1)vim_mycv1.png')  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_8/imgs/2)vim_mycv2.png)  
 
 ------------  
