@@ -51,10 +51,11 @@
 
 
 #### **7. Display your current shell name.**  
-- $SHELL variable contains the path to the default shell for the current user, not necessarily the shell that is currently running. If you have changed the shell after logging in, $SHELL will still show the original default shell. To see the current running shell, we can use the ps -p $$
+- SHELL variable contains the path to the default shell for the current user, not necessarily the shell that is currently running. If you have changed the shell after logging in, $SHELL will still show the original default shell. To see the current running shell, we can use the ps -p $$
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_8/imgs/12_current_shell.png)  
 
-[========]
+------------
+------------  
 
 #### **1. List the user commands and redirect the output to /tmp/commands.list**  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_4/linux_8/imgs/13_redirect.png)  
