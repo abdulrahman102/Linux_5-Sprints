@@ -1,5 +1,6 @@
-###**Uploaded the original and the solution scripts**  
-####**The Script :**  
+### **Uploaded the original and the solution scripts**  
+#### **The Script :**  
+    
     #!/bin/bash  
     echo "This script will print variables, and execute Linux commands"  
  
@@ -32,7 +33,7 @@
     current_user  
     list_files  
 
-####**Screenshots :**
-    ![]()  
-    ![]()  
+#### **Screenshots :**
+    ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_5/Bash_1/imgs/Code_screenshot.png)  
+    ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_5/Bash_1/imgs/Output_screenshot.png)  
 
