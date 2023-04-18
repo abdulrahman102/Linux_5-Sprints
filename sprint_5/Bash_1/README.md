@@ -33,7 +33,7 @@
     current_user  
     list_files  
 
-#### **Screenshots :**
-    ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_5/Bash_1/imgs/Code_screenshot.png)  
-    ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_5/Bash_1/imgs/Output_screenshot.png)  
+#### **Screenshots :**  
+   ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_5/Bash_1/imgs/Code_screenshot.png)  
+   ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_5/Bash_1/imgs/Output_screenshot.png)  
 
