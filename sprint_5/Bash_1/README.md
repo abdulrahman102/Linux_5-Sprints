@@ -34,6 +34,8 @@
     list_files  
 
 #### **Screenshots :**  
+- **Code :**    
    ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_5/Bash_1/imgs/Code_screenshot.png)  
+- **Output :** 
    ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_5/Bash_1/imgs/Output_screenshot.png)  
 
