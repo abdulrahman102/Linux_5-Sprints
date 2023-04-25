@@ -49,11 +49,11 @@
 
 ### **Screenshots:**  
 - **Server before running script**  
-![]()  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_5/Bash_2/imgs/List_server_before_run.png)  
 - **Script Running (Client-Side)**  
-![]()  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_5/Bash_2/imgs/Run_command.png)  
 - **Server after runnning script**  
-![]()  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_5/Bash_2/imgs/List_server_after_run.png)  
 
 
 
