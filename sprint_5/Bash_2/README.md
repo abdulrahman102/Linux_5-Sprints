@@ -43,7 +43,7 @@
 
     CreateLogs
     ServerCredintails
-    rsync -avzp --ignore-existing logs.tar.gz ahmed@127.0.0.1:$SERVER_HOME_DIR
+    rsync -avzp --ignore-existing logs.tar.gz ahmed@127.0.0.1:$SERVER_DIR
 
 
 
