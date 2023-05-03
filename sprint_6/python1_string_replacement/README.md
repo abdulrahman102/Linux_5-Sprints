@@ -68,7 +68,7 @@
                 continue
             else:
                 break
-        
+
     
 #### The execution screeshot:  
-![]() 
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/sprint_6/python1_string_replacement/String_Replacement_run.png) 
