@@ -1,0 +1,23 @@
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - /mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=db_123
+      - MYSQL_DATABASE=db
+      - MYSQL_PASSWORD=db_123
+
+  ghost:
+    image: ghost:1-alpine
+    restart: always
+    ports:
+      - 5000:2368
+    environment:
+      - database__client=mysql
+      - database__connection__host=db
+      - database__connection__user=root
+      - database__connection__password=db_123
+      - database__connection__database=db1
+      - url=http://localhost:5000
+
