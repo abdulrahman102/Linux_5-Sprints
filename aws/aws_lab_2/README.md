@@ -13,5 +13,5 @@
 ### **4- Install nginx server.**
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/aws/aws_lab_2/screenshots/4.png)
 
-### **5- Check it's working through public IP **
+### **5- Check it's working through public IP.**
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/aws/aws_lab_2/screenshots/5.png)
