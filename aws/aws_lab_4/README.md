@@ -1,13 +1,13 @@
 # **AWS LAB 4**
 ## **1- Launch a jump host.**
 
-- ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/aws/aws_lab_4/Screenshots/1-1.png)  
+    ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/aws/aws_lab_4/Screenshots/1-1.png)  
 
 
-- ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/aws/aws_lab_4/Screenshots/1-2.png)  
+    ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/aws/aws_lab_4/Screenshots/1-2.png)  
 
 
-- ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/aws/aws_lab_4/Screenshots/1-3.png)  
+    ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/aws/aws_lab_4/Screenshots/1-3.png)  
 
 -------------
 -------------
