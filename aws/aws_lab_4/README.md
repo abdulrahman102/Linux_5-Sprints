@@ -43,7 +43,8 @@
 
 ### **Results (I changed one of server's content to assure that it's working):**
 
-- ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/aws/aws_lab_4/Screenshots/2-8.png)  
+- 
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/aws/aws_lab_4/Screenshots/2-8.png)  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/aws/aws_lab_4/Screenshots/2-9.png)  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/aws/aws_lab_4/Screenshots/2-10.png)  
 
