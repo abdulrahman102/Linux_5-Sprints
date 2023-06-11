@@ -6,5 +6,5 @@
 
 -------------
 
-## ** ADD SSL to it**
+## **Add SSL to the site**
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/NGINX/screenshots/3.png)
