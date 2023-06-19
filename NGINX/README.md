@@ -7,4 +7,7 @@
 -------------
 
 ## **Add SSL to the site**
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/NGINX/screenshots/4.png)  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/NGINX/screenshots/5.png)  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/NGINX/screenshots/6.png)  
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/NGINX/screenshots/3.png)
