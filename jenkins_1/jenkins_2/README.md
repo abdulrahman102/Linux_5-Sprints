@@ -35,3 +35,18 @@
 
 
 -----
+
+## **6- Create jenkins pipeline for your repo and use script file (jenkinsfile) to write pipeline syntax, include parameter functions and env variable in it**
+
+![]()  
+![]()  
+![]()  
+![]()  
+![]()  
+
+-----
+## **7- Create another multibranch pipeline and filter branches to contain only (master , dev , test )**
+## **I Changed The branches name to valdiate the process**
+
+![]()  
+![]()  
