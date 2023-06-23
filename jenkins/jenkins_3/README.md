@@ -18,21 +18,21 @@
 -----
 
 ## **3- make jenkins-shared-library and make your jenkinsfile which you used in lab2 to point to this library**
-## **The used file can be checked through this link [files](https://github.com/abdulrahman102/jenkins_2.git)
+## **The used file can be checked through this [Link.](https://github.com/abdulrahman102/jenkins_2.git)**
 
 - ### Shared library can be used to hold an entire pipeline in declarative method or snippets of reuseable code in the script method, as I go through articles and documents, the declarative method was originally created to be a self contained script with less outsider codes                
 
-![]()
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_3/screenshots/1.png)
 
-![]()
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_3/screenshots/2.png)
 
-![]()
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_3/screenshots/3.png)
 
-![]()
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_3/screenshots/4.png)
 
-![]()
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_3/screenshots/5.png)
 
-![]()
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_3/screenshots/6.png)
 -----
 
 ## **4- try to make new slave as container or ec2 server and configure master to use it**
