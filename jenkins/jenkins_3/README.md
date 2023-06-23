@@ -1,8 +1,9 @@
 ## **JENKINS TASK 3**
 
 ## **1- what is the benefit of using master-slave architecture rather than building on master only ?**
-
-- ### The master-slave architecture provides better scalability, fault tolerance, performance, and flexibility in comparison to depending solely on a single master system as it allows for parallel processing and workload distribution across multiple slave systems and ensures continuity of service even in the presence of failures and offers scalability by allowing additional slave systems to be added as the demand or workload increases.
+```diff
+- The master-slave architecture provides better scalability, fault tolerance, performance, and flexibility in comparison to depending solely on a single master system as it allows for parallel processing and workload distribution across multiple slave systems and ensures continuity of service even in the presence of failures and offers scalability by allowing additional slave systems to be added as the demand or workload increases.
+```
 
 
 -----
