@@ -33,6 +33,7 @@
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_3/screenshots/5.png)
 
 ![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_3/screenshots/6.png)
+
 -----
 
 ## **4- try to make new slave as container or ec2 server and configure master to use it**
