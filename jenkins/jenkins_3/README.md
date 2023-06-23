@@ -39,12 +39,12 @@
 ## **4- try to make new slave as container or ec2 server and configure master to use it**
 - ### After configuring both ec2 instance and jenkins container and adding ssh for both of them, the configuration in the jenkins itself is done by this steps.
 
-![]()
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_3/screenshots/7.png)
 
-![]() 
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_3/screenshots/8.png) 
 
-![]()
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_3/screenshots/9.png)
 
-![]()
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_3/screenshots/10.png)
 
-![]()
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_3/screenshots/11.png)
