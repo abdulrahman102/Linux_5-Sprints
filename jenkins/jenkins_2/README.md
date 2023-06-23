@@ -38,15 +38,15 @@
 
 ## **6- Create jenkins pipeline for your repo and use script file (jenkinsfile) to write pipeline syntax, include parameter functions and env variable in it**
 
-![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins_1/jenkins_2/screenshots/1.png)  
-![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins_1/jenkins_2/screenshots/2.png)  
-![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins_1/jenkins_2/screenshots/3.png)  
-![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins_1/jenkins_2/screenshots/4.png)  
-![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins_1/jenkins_2/screenshots/5.png)  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_2/screenshots/1.png)  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_2/screenshots/2.png)  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_2/screenshots/3.png)  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_2/screenshots/4.png)  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_2/screenshots/5.png)  
 
 -----
 ## **7- Create another multibranch pipeline and filter branches to contain only (master , dev , test )**
 ## **I Changed The branches name to valdiate the process**
 
-![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins_1/jenkins_2/screenshots/6.png)  
-![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins_1/jenkins_2/screenshots/7.png)  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_2/screenshots/6.png)  
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/jenkins/jenkins_2/screenshots/7.png)  
