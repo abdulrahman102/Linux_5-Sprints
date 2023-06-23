@@ -18,7 +18,7 @@
 -----
 
 ## **3- make jenkins-shared-library and make your jenkinsfile which you used in lab2 to point to this library**
-## **The used file can be checked through this [Link.](https://github.com/abdulrahman102/jenkins_2.git)**
+## **The used files can be checked through this [Link.](https://github.com/abdulrahman102/jenkins_2.git)**
 
 - ### Shared library can be used to hold an entire pipeline in declarative method or snippets of reuseable code in the script method, as I go through articles and documents, the declarative method was originally created to be a self contained script with less outsider codes                
 
