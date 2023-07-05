@@ -1,3 +1,4 @@
+# Creating vpc
 resource "aws_vpc" "sprints_vpc" {
     cidr_block = "10.0.0.0/16"
     tags = {
@@ -6,7 +7,7 @@ resource "aws_vpc" "sprints_vpc" {
 }
 
 
-
+# Creating Internt gateway for this vpc
 resource "aws_internet_gateway" "sprints_gw" {
   vpc_id = aws_vpc.sprints_vpc.id
 
@@ -16,7 +17,7 @@ resource "aws_internet_gateway" "sprints_gw" {
 }
 
 
-
+# Creating subnet inside the vpc
 resource "aws_subnet" "sprints_subnet" {
     vpc_id = aws_vpc.sprints_vpc.id
     cidr_block = "10.0.0.0/24"
@@ -26,7 +27,7 @@ resource "aws_subnet" "sprints_subnet" {
 }
 
 
-
+# Creating a route table refering to the internet gateway
 resource "aws_route_table" "sprints_rt" {
   vpc_id = aws_vpc.sprints_vpc.id
 
@@ -40,12 +41,14 @@ resource "aws_route_table" "sprints_rt" {
   }
 }
 
-
+# Creating association to link route table with the subnet
 resource "aws_route_table_association" "sprints_rta" {
   subnet_id      = aws_subnet.sprints_subnet.id
   route_table_id = aws_route_table.sprints_rt.id
 }
 
+
+# Creating ami search to get the ubuntu ami id
 data "aws_ami" "ubuntu" {
   most_recent = true
 
@@ -63,6 +66,7 @@ data "aws_ami" "ubuntu" {
 }
 
 
+# Creating a security group to allow http and https and ssh
 resource "aws_security_group" "sprints_sg" {
   name        = "allow_http"
   description = "Allow http inbound traffic"
@@ -103,7 +107,7 @@ resource "aws_security_group" "sprints_sg" {
 }
 
 
-
+# Creating ec2 instance connected to all the created resources and providing a script to install apache2
 resource "aws_instance" "sprints_ec2" {
     ami = data.aws_ami.ubuntu.id
     instance_type = "t2.micro"
