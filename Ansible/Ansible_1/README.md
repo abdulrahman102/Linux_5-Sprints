@@ -5,11 +5,13 @@
 -----
 
 **I used terraform to build the infrastructure needed for the task**  
-![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/Ansible/Ansible_1/screenshots/2.png)
 
 **To connect to private instance I used the public instance as a bastion host**
 
 **The playbook have all the configurations of the two instances**
+
+![](https://github.com/abdulrahman102/Sprints_tasks/blob/master/Ansible/Ansible_1/screenshots/2.png)
+
 
 -----
 
