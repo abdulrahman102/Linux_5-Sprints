@@ -1,0 +1,14 @@
+[public_server]
+3.94.252.100 
+
+[private_server]
+10.0.1.181
+
+[public_server:vars]
+ansible_user = ubuntu
+ansible_ssh_private_key_file="/home/abdulrahman/.ssh/sprint_1.pem"
+
+[private_server:vars]
+ansible_user = ubuntu
+ansible_ssh_private_key_file="/home/abdulrahman/.ssh/sprint_1.pem"
+ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p -q -i /home/abdulrahman/.ssh/sprint_1.pem ubuntu@3.94.252.100"'

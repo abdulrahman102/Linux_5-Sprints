@@ -1,0 +1,54 @@
+---
+- name: configure public server
+  hosts: public_server
+  become: yes
+  tasks:
+  - name: install nginx
+    apt: name=nginx state=latest
+  - name: start nginx
+    service:
+        name: nginx
+        state: started
+  - name: copy default
+    copy:
+      src: ./default
+      dest: /etc/nginx/sites-enabled/default
+  - name: copy html
+    copy:
+      src: ./index.html
+      dest: /var/www/html/index.html
+  - name: restart nginx service
+    service:
+      name: nginx
+      state: restarted
+
+
+
+- hosts: private_server
+  become: yes
+  tasks:
+    - name: Clone a github repository
+      git:
+        repo: https://github.com/sabreensalama/dockerize-node-app-task.git
+        dest: /app/
+        clone: yes
+        update: yes
+    - name: Update apt repo and cache  
+      apt: update_cache=yes force_apt_get=yes cache_valid_time=3600 
+    - name: Install nodejs and npm 
+      apt:                       
+        pkg:
+          - nodejs
+          - npm
+    - name: Install dependencies  
+      npm:                       
+        path: /app/
+    - name: Start the application 
+      command:                    
+        chdir: /app/
+        cmd: node server.js
+      async: 1000                
+      poll: 0                    
+
+
+

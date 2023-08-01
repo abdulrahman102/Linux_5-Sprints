@@ -1,0 +1,14 @@
+server {
+    listen 80 ;
+    location / {
+        proxy_pass http://10.0.1.181:8080;
+    }
+}
+
+server {
+    root /var/www/html;
+    listen 8090 ;
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
