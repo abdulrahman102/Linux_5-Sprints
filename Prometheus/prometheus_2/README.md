@@ -63,7 +63,7 @@ you can use it to :
 - Linting Rules Files
 - Validation of PromQL Queries
 
-
+-----
 
 ### 8) What types of Monitoring can be done via Grafana?
 1. **Infrastructure Monitoring:**
@@ -96,7 +96,7 @@ Grafana can visualize security-related metrics such as authentication attempts, 
 10. **Custom Application Metrics:**
 Grafana can be used to monitor custom applications by integrating it with your codebase and reporting custom metrics relevant to your application's behavior and performance.
 
-
+-----
 
 ### 9) Can we see different Servers CPU comparison in Grafana
 - Yes, you can definitely compare the CPU usage of different servers in Grafana
