@@ -1,0 +1,148 @@
+---
+# tasks file for sonarqube
+- name: Update
+  apt:
+    update_cache: yes
+    upgrade: safe
+
+- name: Add PostgreSQL repository key
+  apt_key:
+    url: https://www.postgresql.org/media/keys/ACCC4CF8.asc
+    state: present
+
+- name: Add PostgreSQL repository
+  apt_repository:
+    repo: "deb http://apt.postgresql.org/pub/repos/apt/ {{ ansible_distribution_release }}-pgdg main"
+    state: present
+
+- name: Install needed tools
+  apt:
+    name: "{{item}}"
+    state: present
+    update_cache: yes
+  with_items: 
+    - wget
+    - apt-transport-https
+    - gnupg2
+    - software-properties-common
+    - unzip
+    - openjdk-17-jdk
+    - openjdk-17-jre
+    - postgresql
+    - postgresql-contrib
+
+- name: Add sonarqube user
+  user:
+    name: sonarqube
+    state: present
+    createhome: yes
+    home: /opt/sonarqube
+    shell: /bin/bash
+
+- name: Set vm.max_map_count sysctl setting
+  sysctl:
+    name: vm.max_map_count
+    value: 524288
+    state: present
+    reload: yes
+
+- name: Set fs.file-max sysctl setting
+  sysctl:
+    name: fs.file-max
+    value: 131072
+    state: present
+    reload: yes
+
+- name: Set ulimit -n setting
+  lineinfile:
+    path: /etc/security/limits.conf
+    line: "* hard nofile 131072"
+    state: present
+
+- name: Set ulimit -u setting
+  lineinfile:
+    path: /etc/security/limits.conf
+    line: "* hard nproc 8192"
+    state: present
+
+- name: Create postgres user
+  become: true
+  become_user: root
+  user:
+    name: postgres
+    state: present
+
+- name: Change PostgreSQL authentication method
+  lineinfile:
+    path: /etc/postgresql/11/main/pg_hba.conf
+    regexp: "{{ item.regexp }}"
+    line: "{{ item.line }}"
+    state: present
+  with_items:
+    - { regexp: "^local.*?peer$", line: "local   all             all                                     trust" }
+    - { regexp: "^host.*?127.0.0.1/32.*?ident$", line: "host    all             all             127.0.0.1/32            md5" }
+    - { regexp: "^host.*?::1/128.*?ident$", line: "host    all             all             ::1/128                 md5" }
+  notify: Restart PostgreSQL
+
+- name: Change permissions of PostgreSQL data directory
+  file:
+    path: /var/lib/postgresql/11/main
+    mode: '0700'
+    recurse: yes
+
+- name: Start PostgreSQL service
+  systemd:
+    name: postgresql@11-main.service
+    state: started
+    enabled: yes
+
+- name: Change the password of the postgres user
+  become: true
+  become_user: root
+  user:
+    name: postgres
+    password: "{{ postgres_user_password | password_hash('sha512') }}"
+
+
+- name: Download SonarQube zip file
+  get_url:
+    url: https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.1.69595.zip
+    dest: /home/ubuntu/sonarqube-9.9.1.69595.zip
+
+- name: Unzip SonarQube
+  unarchive:
+    src: /home/ubuntu/sonarqube-9.9.1.69595.zip
+    dest: /opt/
+    owner: sonarqube
+    group: sonarqube
+    remote_src: yes
+
+- name: Add settings block to sysctl.conf
+  blockinfile:
+    path: /opt/sonarqube-9.9.1.69595/conf/sonar.properties
+    block: |
+      sonar.web.javaAdditionalOpts=-server
+      sonar.web.host=0.0.0.0
+      sonar.web.port=9000
+      sonar.search.javaOpts=-Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError
+      sonar.log.level=INFO
+      sonar.path.logs=logs
+      sonar.jdbc.username=sonar
+      sonar.jdbc.password=pass
+      sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube
+      
+- name: Copy SonarQube service file
+  copy:
+    src: sonarqube.service
+    dest: /etc/systemd/system/sonarqube.service
+    mode: 0644
+
+- name: Reload Systemd daemon
+  systemd:
+    daemon_reload: yes
+
+- name: Start SonarQube service
+  systemd:
+    name: sonarqube
+    state: started
+    enabled: yes

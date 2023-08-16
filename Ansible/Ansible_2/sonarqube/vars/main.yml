@@ -1,0 +1,6 @@
+---
+# vars file for sonarqube
+postgres_user_password: "pass"
+sonarqube_user_password: "pass"
+sonarqube_version: '9.9.1.69595'
+sonar_user_password: "mySonarPassword"

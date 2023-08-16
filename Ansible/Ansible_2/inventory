@@ -1,0 +1,2 @@
+[sonar_server]
+54.159.111.39 ansible_user=ubuntu ansible_ssh_private_key_file=/home/abdulrahman/Downloads/sprints_aws/sprint_1.pem
